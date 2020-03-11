@@ -1,5 +1,5 @@
 <?php
-require_once('../includes/common.php');
+require_once('../includes/php.php');
 
 $nav = (isset($_REQUEST['nav']) ? $_REQUEST['nav'] : '');
 //~ echo $nav;
@@ -11,6 +11,11 @@ switch($nav){
 	break;
 
 	case 'submitLogout':
+		$usr = new user(getUserId());
+		echo $usr->submitLogout();
+	break;
+	
+	case 'logUserOut':
 		$usr = new user(getUserId());
 		echo $usr->submitLogout();
 	break;

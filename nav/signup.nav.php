@@ -1,5 +1,5 @@
 <?php
-require_once('../includes/common.php');
+require_once('../includes/php.php');
 
 $nav = (isset($_REQUEST['nav']) ? $_REQUEST['nav'] : '');
 

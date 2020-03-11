@@ -1,4 +1,4 @@
-<?php require_once('includes/common.php'); ?>
+<?php require_once('includes/php.php'); ?>
 
 <!DOCTYPE html>
 <html>
@@ -6,17 +6,33 @@
 	<?php echo getHeadTags('Home');?>
 </head>
 
-<body onload="
-    <?php 
-        if(userIsLoggedIn()){echo 'showBlankIssueEditPanel();showIssueListPanels();';}
-        else{echo 'appendToWrapperMain(getLoginHtml({\'useGet\':true}));';}
-    ?>
-">
-	<?php echo getHeaderBarHtml(); ?>
-	
-	<main>
-		<div class="wrapperMain" id="wrapperMain">
-		</div>
-	</main>
-    <div id="responseLogIcon" onclick="toggleResponseLog()"></div>
+<body onload="displayHeaderBar();">
+	<header></header>
+
+	<div id="content">
+        <div class="wrapperMain" id="wrapperMain">
+            <main>
+                <div class="panel">gggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg</div>
+                <div class="panel">gggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg</div>
+                <div class="panel">gggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg</div>
+                <div class="panel">gggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg</div>
+                <div class="panel">gggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg</div>
+                <div class="panel">gggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg</div>
+                <div class="panel">gggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg</div>
+                <div class="panel">gggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg</div>
+                <div class="panel">gggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg</div>
+                <div class="panel">gggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg</div>
+                <div class="panel">gggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggggggggggg</div>
+                <div class="panel"></div>
+                <div class="panel"></div>
+                <div class="panel"></div>
+                <div class="panel"></div>
+            </main>
+        </div>
+		
+		<div id="responseLogIcon" onclick="toggleResponseLog();"></div>
+		<div id="timerIcon" onclick="toggleTimerPanel();"></div>
+	</div>
+
+	<footer style="text-align:center;"><a href="http://romolo.co.uk/">romolo.co.uk</a></footer>
 </body>
